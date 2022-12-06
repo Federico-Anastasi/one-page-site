@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <ul class="menu">
+      <a href="#home">
+        <img class="logo-img" src="img/logo.jpg">
+      </a>
+      <li class="menu-item"><a href="#contatti">CONTATTI</a></li>      
+      <li class="menu-item"><a href="#servizi">SERVIZI</a></li>
+      <li class="menu-item"><a href="#chiSiamo">CHI SIAMO</a></li>
+      <li class="menu-item"><a href="#home">HOME</a></li> 
+    </ul> 
+
+    <!-- HOME -->
+    <div id="home" class="sec-home center-div color-black">
+
+      <!-- Title -->
+      <div class="title-div center-div color-black" >
+        <div class="logo-div center-div">
+        </div>
+      </div>
+      
+      <!-- Content -->
+      <div class="sub-sec-home center-div color-black">
+
+        <a class="prev" onclick="change(-1)">&#10094;</a>        
+        <div id="img" class="center-div home-img color-1">        
+        </div> 
+        <a class="next" onclick="change(1)">&#10095;</a>
+
+      </div>  
+
+    </div>
+
+
+    <!-- SEC-1 chiSiamo -->
+    <div id="chiSiamo" class="sec-1 center-div color-gray">
+
+      <!-- Sub-Title -->
+      <div class="sub-title-div center-div color-inherit">
+        <p class="sub-title">CHI SIAMO</p>
+      </div>
+      
+      <!-- Content IN PROGRESS -->
+      <div class="sub-sec-1 center-div color-inherit">
+        <div class="left-div" >
+          <p class="text-1 left">
+            Franco e Gaetano trova spazio in Via Milano, 58 a Catania. 
+            Nelle immediate vicinanze troverai varie fermate di mezzi 
+            pubblici e metropolitana Italia. Lo staff di Franco e Gaetano 
+            ti accoglierà in un ambiente elegante e rilassante, in cui il 
+            tempo da dedicare alla bellezza dei tuoi capelli è ricco di 
+            possibilità di scelta. Colore gloss, bagni di cheratina, 
+            colpi di sole, shatush - i tuoi capelli risulteranno più 
+            luminosi e nutriti grazie all'impiego dei prodotti L'Oreal 
+            e Artègo e strumenti all'avanguardia come Ghd  e phon 
+            ionizzati Parlux professional.             
+          </p>
+          <h5 class="center">Cosa aspetti? Prenota il tuo appuntamento!</h5>
+        </div>
+          <img class="right-div img-1" src="img/ph_1.jpg">        
+      </div>  
+
+    </div>
+
+    <!-- SEC-2 servizi-->
+    <div id="servizi" class="sec-1 center-div color-black">
+
+      <!-- Sub-Title -->
+      <div class="sub-title-div center-div color-inherit">
+        <p class="sub-title">SERVIZI</p>
+      </div>
+      
+      <!-- Content -->
+      <div class="sub-sec-1 center-div color-inherit">
+        <div class="servizi-div color-inherit">
+          <div class="servizi-img" onclick="openDialog(1)">
+            <h2 class="center color-1">TAGLIO</h2>
+          </div>
+          <div class="servizi-img" onclick="openDialog(2)">
+            <h2 class="center color-1">TRATTAMENTI</h2>
+          </div>
+          <div class="servizi-img" onclick="openDialog(3)">
+            <h2 class="center color-1">ESTETICA</h2>
+          </div>
+        </div>                
+
+      </div>   
+
+      <!-- Dialogs -->
+      <div id="dialog_1" class="dialog-div color-gray" >
+        <div class="close-btn-div color-black" onclick="closeDialog()"></div>
+        <h2 class="center">SALONE</h2>
+
+        <table class="table center-div">
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+        </table>
+
+      </div>
+      <div id="dialog_2" class="dialog-div color-gray" >
+        <div class="close-btn-div color-black" onclick="closeDialog()"></div>
+        <h2 class="center">TRATTAMENTI</h2>
+       
+        <table>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+        </table>
+
+      </div>
+      <div id="dialog_3" class="dialog-div color-gray" >
+        <div class="close-btn-div color-black" onclick="closeDialog()"></div>
+        <h2 class="center">ESTETICA</h2>
+        
+        <table>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>
+          </tr>
+        </table>
+
+      </div>
+
+    </div>
+
+    <!-- SEC-3 contatti-->
+    <div id="contatti" class="sec-1 center-div color-gray">
+
+      <!-- Sub-Title -->
+      <div class="sub-title-div center-div color-inherit">
+        <p class="sub-title">CONTATTI</p>
+      </div>
+      
+      <!-- Content -->
+      <div class="sub-sec-1 center-div color-inherit">
+       
+      </div>  
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer color-gray-2">
+
+      <!-- Content-->
+      <div class="sec-footer center-div color-gray">
+
+        <!-- Info -->
+        <div class="info card center-div color-content" >
+
+          <p class="left text-1">
+            <i class="material-icons" style="font-size:20px;color:white">date_range</i> Martedì - Venerdì: 9-20<br> 
+          </p>
+          <p class="left text-1">
+            <i class="material-icons" style="font-size:20px;color:white">date_range</i> Sabato e Domenica: 10-21<br> 
+          </p>
+          <p class="left text-1">
+            <i class="fa fa-mobile-phone" style="font-size:20px;color:white"></i> 340 1842976
+          </p>
+          <p class="left text-1">
+            <i class="fa fa-phone" style=></i> 095 371840
+          </p>
+          <p class="left text-1">
+            <i class="material-icons" style="font-size:20px;color:white">place</i> Via Milano 58/D, Catania
+          </p>
+
+        </div>
+
+        <!-- Map -->
+        <iframe class="card center-div color-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d361.95818026839345!2d15.09831420719086!3d37.51751932803365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fcc8ea7d309b%3A0xd538315f145ea236!2sFranco%20%26%20Gaetano%20Hairstylist%20-%20Consulente%20d&#39;immagine!5e0!3m2!1sen!2sit!4v1668709537717!5m2!1sen!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+      
+      </div>
+
+      <!-- Sign -->
+      <div class="sign color-black">
+        <p class="sub-title " style="font-size: 20px;"> Signature 2022</p>
+      </div>
+
+    </div>
+    
+
+    <script>
+      let imgIndex = 1;
+      let maxImgIndex = 3;
+      let img = document.getElementById("img");
+
+      document.getElementById("img").style.backgroundImage = "url(img/ph_" + imgIndex + ".jpg)";
+
+      function change(n) {                
+        imgIndex += n;        
+        if(imgIndex > maxImgIndex){imgIndex = 1}
+        if(imgIndex < 1){imgIndex = maxImgIndex}
+        console.log(imgIndex)
+        img.style.backgroundImage = "url(img/ph_" + imgIndex + ".jpg)";
+      }
+
+      function openDialog(n) {
+        let dialogName = "dialog_" + n;
+        document.getElementById(dialogName).style.display = "block";
+      }
+      function closeDialog() {
+        let dialogs = document.getElementsByClassName("dialog-div");
+        for(let i=0; i< dialogs.length; i++){
+          dialogs[i].style.display ="none";
+        }        
+      }
+    </script>
+    
+    <!-- BUTTONS 
+    <div class="center">
+      <button id="loadButton" class="button button1">LOAD</button>
+    </div> -->
+    <!--<script src="/js/dist/web3.min.js"></script>
+    <script src="/js/dist/bundle.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/abi.js"></script>
+    <script src="/js/app.js"></script>-->
+
+    <!-- <div class="list-item color-2">
+      <p>
+        Servizio 1 €x
+      </p>
+    </div>
+    <div class="list-item margin-left color-1">
+      <p>
+        Servizio 1 €x
+      </p>
+    </div>
+    <div class="list-item color-2">
+      <p>
+        Servizio 1 €x
+      </p>
+    </div>
+    <div class="list-item margin-left color-1">
+      <p>
+        Servizio 1 €x
+      </p>
+    </div>
+    <div class="list-item color-2">
+      <p>
+        Servizio 1 €x
+      </p>
+    </div>
+    <div class="list-item margin-left color-1">
+      <p>
+        Servizio 1 €x
+      </p>
+    </div> -->
+
+  </body>
+</html> 

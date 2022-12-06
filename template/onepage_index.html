@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="onepage_style.css" media="screen">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+ 
+
+  </head>
+  <body>
+    <!-- NAV BAR -->
+    <ul class="menu">
+      <img class="logo-img" src="...">
+      <li class="menu-item"><a href="#contatti">CONTATTI</a></li>      
+      <li class="menu-item"><a href="#servizi">SERVIZI</a></li>
+      <li class="menu-item"><a href="#chiSiamo">CHI SIAMO</a></li>
+      <li class="menu-item"><a href="#home">HOME</a></li> 
+    </ul> 
+
+    <!-- HOME -->
+    <div class="sec-home center-div color-black">
+
+      <!-- Title -->
+      <div class="title-div center-div color-title" >
+        <p class="title">TITLE</p>
+      </div>
+      
+      <!-- Content -->
+      <div class="sub-sec-home center-div color-content">
+
+        <a class="prev" onclick="change(-1)">&#10094;</a>        
+        <div id="img" class="center-div img-1 color-1">        
+        </div> 
+        <a class="next" onclick="change(1)">&#10095;</a>
+
+      </div>  
+
+    </div>
+
+
+    <!-- SEC-1 -->
+    <div id="chiSiamo" class="sec-1 center-div color-1">
+
+      <!-- Sub-Title -->
+      <div class="sub-title-div center-div color-title">
+        <p class="sub-title">CHI SIAMO</p>
+      </div>
+      
+      <!-- Content -->
+      <div class="sub-sec-1 center-div color-content">
+      </div>  
+
+    </div>
+
+    <!-- SEC-2 -->
+    <div id="servizi"  class="sec-1 center-div color-2">
+
+      <!-- Sub-Title -->
+      <div class="sub-title-div center-div color-title">
+        <p class="sub-title">SERVIZI</p>
+      </div>
+      
+      <!-- Content -->
+      <div class="sub-sec-1 center-div color-content">
+      </div>  
+
+    </div>
+
+    <!-- SEC-3 -->
+    <div id="contatti" class="sec-1 center-div color-3">
+
+      <!-- Sub-Title -->
+      <div class="sub-title-div center-div color-title">
+        <p class="sub-title">CHI SIAMO</p>
+      </div>
+      
+      <!-- Content -->
+      <div class="sub-sec-1 center-div color-content">
+      </div>  
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <div class="footer color-gray-2">
+
+      <!-- Content-->
+      <div class="sec-footer center-div color-gray">
+
+        <!-- Info -->
+        <div class="info card center-div color-content" >
+
+          <p class="left text-1">
+            <i class="material-icons" style="font-size:20px;color:white">date_range</i> Martedì - Venerdì: 9-20<br> 
+          </p>
+          <p class="left text-1">
+            <i class="material-icons" style="font-size:20px;color:white">date_range</i> Sabato e Domenica: 10-21<br> 
+          </p>
+          <p class="left text-1">
+            <i class="fa fa-mobile-phone" style="font-size:20px;color:white"></i> 340 1842976
+          </p>
+          <p class="left text-1">
+            <i class="fa fa-phone" style=></i> 095 371840
+          </p>
+          <p class="left text-1">
+            <i class="material-icons" style="font-size:20px;color:white">place</i> Via Milano 58/D, Catania
+          </p>
+
+        </div>
+
+        <!-- Map -->
+        <iframe class="card center-div color-content" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d361.95818026839345!2d15.09831420719086!3d37.51751932803365!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1313fcc8ea7d309b%3A0xd538315f145ea236!2sFranco%20%26%20Gaetano%20Hairstylist%20-%20Consulente%20d&#39;immagine!5e0!3m2!1sen!2sit!4v1668709537717!5m2!1sen!2sit" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>      
+      
+      </div>
+
+      <!-- Sign -->
+      <div class="sign color-black">
+        <p class="sub-title " style="font-size: 20px;"> Signature 2022</p>
+      </div>
+
+    </div>
+    
+
+    <script>
+      let imgIndex = 1;
+      let maxImgIndex = 3;
+      let img = document.getElementById("img");
+
+      document.getElementById("img").style.backgroundImage = "url(img/ph_" + imgIndex + ".jpg)";
+
+      function change(n) {                
+        imgIndex += n;        
+        if(imgIndex > maxImgIndex){imgIndex = 1}
+        if(imgIndex < 1){imgIndex = maxImgIndex}
+        console.log(imgIndex)
+        img.style.backgroundImage = "url(img/ph_" + imgIndex + ".jpg)";
+      }
+    </script>
+    
+    <!-- BUTTONS 
+    <div class="center">
+      <button id="loadButton" class="button button1">LOAD</button>
+    </div> -->
+    <!--<script src="/js/dist/web3.min.js"></script>
+    <script src="/js/dist/bundle.js"></script>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/abi.js"></script>
+    <script src="/js/app.js"></script>-->
+
+  </body>
+</html> 

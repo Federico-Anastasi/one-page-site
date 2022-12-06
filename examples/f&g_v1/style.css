@@ -1,0 +1,404 @@
+  html{
+    scroll-behavior:smooth
+  }
+  body {
+      font-family: Helvetica, sans-serif;
+      color: white;
+      background-color: black;
+      /*white;*/
+      /*linear-gradient(to bottom, 	rgb(0,0,0), rgb(0,0,0), rgb(20,20,20));*/
+      /*linear-gradient(to bottom, 	rgb(0,0,0), rgb(20,20,20), rgb(40,40,40))*/ 
+      /*linear-gradient(to bottom right, blue, green, yellow);*/
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      /*background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;*/
+  }
+  #home, #chiSiamo, #servizi, #contatti {
+    scroll-margin-top: 8vh;
+  }
+
+  /*** COLOR ***/
+  .color-1{
+    background-color: #20ba65 !important;
+  }
+  .color-2{
+    background-color: #bee346 !important;
+  }
+  .color-3{
+    background-color: #cd1c3f !important;
+  }
+  .color-title{
+    background-color: rgb(200, 141, 110);
+  }
+  .color-content{
+    background-color: #468ae3 !important;
+  }
+  .color-black{
+    background-color: #000000;
+  }
+  .color-gray{
+    background-color: #141414;
+  }
+  .color-gray-2{
+    background-color: #282828;
+  }
+  .color-inherit{
+    background-color: inherit;
+  }
+
+  /*** GENERAL ***/
+  .center{
+    text-align: center;
+  }
+  .left{
+    text-align: left;
+  }
+  .center-div{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .margin-left{
+    margin-left: 5%;
+  }
+
+  /*** NAV BAR ***/
+  .menu {
+    height: 8vh;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0);
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  .logo-img {
+    float: left;
+    padding-left: 10px;
+    height: 8vh;
+  }
+  .menu-item {
+    float: right;
+  }
+  .menu-item a {
+    display: inline-block;
+    vertical-align: middle;
+    color: white;
+    text-align: center;
+    height: 8vh;
+    padding: 3vh;
+    font-size: 1vw;
+    text-decoration: none;
+  }
+  .menu-item a:hover:not(.active) {
+    background-color: #111;
+  }
+
+  /* SEC */
+  .sec-home{
+    height: 92vh;
+    width: 90%;
+  }
+  .title-div{
+    width: 80%;
+    height: 30vh; 
+    padding: 5px;
+  }
+  .sub-sec-home{
+    display: flex;
+    flex-direction: row;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 80%;;
+    height: 50vh;
+  }
+
+  .sec-1{
+    height: 92vh;
+  }
+  .sub-title-div{
+    width: 80%;
+    height: 10vh; 
+    padding: 5px;
+  }
+  .sub-sec-1{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 80%;;
+    height: 70vh;
+  }
+
+  .footer{
+    width: 100%;
+    height: auto;
+    display: inline-block;
+    background-color: rgb(25,25,25);
+  }   
+  .sec-footer{
+    width: 90%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+  }
+  .card{
+    display: inline-block;
+    right: 0;
+    vertical-align: middle;
+    padding: 1% 2%;
+  } 
+  .info{
+    width: 40%;
+    height: 40vh;
+  }
+  iframe{
+    float: right;
+    width: 40%;
+    height: 40vh;
+    border: none;
+  }
+
+  /* SUB-SEC */
+  .title{
+    text-align: center;
+    font-size: 60px;
+    margin: 20px 20px ;
+  }
+  .sub-title{
+    text-align: center;
+    margin-top: 2vh;
+    margin-bottom: auto;
+    font-size: 3vw;
+  }
+  .sign{
+    width: 100%;
+    height: 7vh;
+  }
+
+/******************* CUSTOM *******************/
+  .logo-div{
+    height: 100%;
+    aspect-ratio: 1.7;
+    background-image: url(img/logo.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .home-img{
+    height: 100%; 
+    aspect-ratio: 1;  
+    /*background-image: url(img/ph_1.jpg);*/
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+  .img-1{
+    padding: 16px;
+    max-height: 80%;    
+  }
+  .text-1{    
+    font-size: 1.3vw;
+    padding: 16px;
+    line-height: 1.6;
+    text-align:justify;
+  }
+  .left-div{
+    position: relative;
+    float: left;
+    width: 50%;
+    max-height: 80%;
+  }
+  .right-div{
+    position: relative;
+    float: right;
+    width: 40%;
+  }
+  .servizi-div{
+    width: max-content;
+    padding: 1vw;    
+  }
+  .servizi-img{
+    display: inline-block;
+    vertical-align: middle;
+    width: 25vw;
+    aspect-ratio: 1;
+    background-image: url(img/ph_1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    cursor: pointer;
+  }
+  /* .servizi-img:hover{
+    transform: rotate3d(0, 1, 0, 360deg);
+    transition-timing-function: linear;
+    transition-duration: 2s;   
+  } */
+
+  /* DIALOG */
+  .dialog-div{
+    display: none;
+    z-index: 1000;
+    position: fixed;
+    width: 60vw;
+    height: 60vh;
+    top: 20vh;
+    left: 20vw;
+    border: solid #141414;
+  }
+  .close-btn-div{
+    float: right;
+    width: 50px;
+    aspect-ratio: 1;
+  }
+  .table{
+    width: 80%;
+  }
+  tr{
+    height: 4vh;
+  }
+
+
+
+  /*** Next & previous buttons ***/
+.prev, .next {
+  background-color: rgba(0,0,0,0.8);
+  position: relative;
+  float: left;
+  top: 0;
+  cursor: pointer;
+  text-align: center;
+  flex-grow: 1;
+  line-height: 50vh;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  /*border-radius: 0 3px 3px 0;*/
+  user-select: none;
+}
+.next {
+  float: right;
+  /*border-radius: 3px 0 0 3px;*/
+}
+.prev:hover, .next:hover {
+  background-color:rgb(20, 20, 20,0.8); 
+}
+
+  /* buttons */
+  .button {
+    z-index: 100;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .button1 {
+    background-color: white; 
+    color: black; 
+    border: 2px solid black;
+    border-radius: 8px;
+  }
+  .button1:hover {
+    background-color: black;
+    border: 2px solid white;
+    color: white;
+  } 
+
+
+
+
+
+
+  /* Fading animation */
+  /* .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  } */
+
+  /* social-icon */
+  /* .social-icons{
+    padding: 50px;
+    text-align: center;
+  }
+  .social-icons-img{
+    padding: 5px ;
+    transition: transform 0.5s; /* Animation */
+  /* }
+  .social-icons-img:hover{
+    transform: scale(1.5);
+  }
+  .links{
+    color:rgb(141, 191, 255); 
+  }   */
+
+    /* .list-item{
+    width: 30%;
+    height: fit-content; 
+    padding: 0.3vw 3vw;  
+  }
+  .list-item p{
+    font-size: 1.3vw;   
+  } */
+
+ /*** MOBILE ***/
+  @media screen and (max-width: 500px) {
+
+  .title{
+    padding: 40px 0px;
+  }
+    
+  .main .openButton{
+    background-color: black;
+    color: black;
+    position: fixed;
+    top: 5px;
+    right: 5px;
+    padding: 2px;
+    visibility: visible;
+  }
+
+  .main .menu-icon{
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    margin: 6px 0;
+  }
+
+  .main{
+    margin-left: 0px;
+    margin-right: 0px; 
+    padding: 0px 20px;
+  }
+
+  .sidenav .closeButton {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    visibility: visible;
+  }
+  
+  .sidenav {
+    padding-top: 15px;
+    width: 0%;
+    background-color: rgba(0, 0, 0,0.9);
+  }
+  .sidenav a {
+    font-size: 18px;
+    line-height: 2;
+  }
+}
+
+
