@@ -30,12 +30,11 @@
       </div>
       
       <!-- Content -->
-      <div class="sub-sec-home center-div color-black">
-
-        <a class="prev" onclick="change(-1)">&#10094;</a>        
-        <div id="img" class="center-div home-img color-1">        
-        </div> 
-        <a class="next" onclick="change(1)">&#10095;</a>
+      <div class="sub-sec-home center-div color-black">             
+        <div id="img" class="center-div home-img color-black">  
+          <a class="prev" onclick="change(-1)">&#10094;</a>   
+          <a class="next" onclick="change(1)">&#10095;</a>      
+        </div>        
 
       </div>  
 
@@ -52,6 +51,7 @@
       
       <!-- Content IN PROGRESS -->
       <div class="sub-sec-1 center-div color-inherit">
+        <img class="right-div img-1" src="img/ph_1.jpg">   
         <div class="left-div" >
           <p class="text-1 left">
             Franco e Gaetano trova spazio in Via Milano, 58 a Catania. 
@@ -67,7 +67,7 @@
           </p>
           <h5 class="center">Cosa aspetti? Prenota il tuo appuntamento!</h5>
         </div>
-          <img class="right-div img-1" src="img/ph_1.jpg">        
+             
       </div>  
 
     </div>
@@ -84,13 +84,13 @@
       <div class="sub-sec-1 center-div color-inherit">
         <div class="servizi-div color-inherit">
           <div class="servizi-img" onclick="openDialog(1)">
-            <h2 class="center color-1">TAGLIO</h2>
+            <p class="sub-title color-transparent">TAGLIO</p>
           </div>
           <div class="servizi-img" onclick="openDialog(2)">
-            <h2 class="center color-1">TRATTAMENTI</h2>
+            <p class="sub-title color-transparent">TRATTAMENTI</p>
           </div>
           <div class="servizi-img" onclick="openDialog(3)">
-            <h2 class="center color-1">ESTETICA</h2>
+            <p class="sub-title color-transparent">ESTETICA</p>
           </div>
         </div>                
 
@@ -98,63 +98,74 @@
 
       <!-- Dialogs -->
       <div id="dialog_1" class="dialog-div color-gray" >
-        <div class="close-btn-div color-black" onclick="closeDialog()"></div>
+        <div class="close-btn-div color-black" onclick="closeDialog()">
+          <i class="material-icons float-right">close</i></div>
         <h2 class="center">SALONE</h2>
 
-        <table class="table center-div">
+        <table class="table float-left">
           <tr>
             <td>Piega lunga</td>
-            <td>15</td>
-            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
-            <td>Piega lunga</td>
-            <td>15</td>
+            <td>15</td>            
           </tr>
           <tr>
             <td>Piega corta</td>
-            <td>13</td>
-            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+            <td>13</td>            
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
+          <tr>
             <td>Piega lunga</td>
             <td>15</td>
           </tr>
           <tr>
             <td>Piega lunga</td>
             <td>15</td>
-            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+          </tr>
+          <tr>
             <td>Piega lunga</td>
             <td>15</td>
           </tr>
           <tr>
             <td>Piega lunga</td>
             <td>15</td>
-            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
+          </tr>
+        </table>
+        <table class="table float-right">
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>            
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
+          <tr>
             <td>Piega lunga</td>
             <td>15</td>
           </tr>
           <tr>
             <td>Piega lunga</td>
             <td>15</td>
-            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
-            <td>Piega lunga</td>
-            <td>15</td>
           </tr>
           <tr>
             <td>Piega lunga</td>
             <td>15</td>
-            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
-            <td>Piega lunga</td>
-            <td>15</td>
           </tr>
           <tr>
-            <td>Piega lunga</td>
-            <td>15</td>
-            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
-            <td>Piega lunga</td>
-            <td>15</td>
-          </tr>
-          <tr>
-            <td>Piega lunga</td>
-            <td>15</td>
-            <td> &nbsp; &nbsp; &nbsp; &nbsp; </td>
             <td>Piega lunga</td>
             <td>15</td>
           </tr>
@@ -162,73 +173,151 @@
 
       </div>
       <div id="dialog_2" class="dialog-div color-gray" >
-        <div class="close-btn-div color-black" onclick="closeDialog()"></div>
+        <div class="close-btn-div color-black" onclick="closeDialog()">
+          <i class="material-icons float-right">close</i></div>
         <h2 class="center">TRATTAMENTI</h2>
-       
-        <table>
+
+        <table class="table float-left">
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>            
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
           <tr>
             <td>Piega lunga</td>
             <td>15</td>
           </tr>
           <tr>
-            <td>Piega corta</td>
-            <td>13</td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+        </table>
+        <table class="table float-right">
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
           </tr>
           <tr>
             <td>Piega corta</td>
-            <td>13</td>
+            <td>13</td>            
           </tr>
           <tr>
-            <td>Piega corta</td>
-            <td>13</td>
+            <td>Piega lunga</td>
+            <td>15</td>            
           </tr>
           <tr>
-            <td>Piega corta</td>
-            <td>13</td>
+            <td>Piega lunga</td>
+            <td>15</td>            
           </tr>
           <tr>
-            <td>Piega corta</td>
-            <td>13</td>
+            <td>Piega lunga</td>
+            <td>15</td>
           </tr>
           <tr>
-            <td>Piega corta</td>
-            <td>13</td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
           </tr>
         </table>
 
       </div>
       <div id="dialog_3" class="dialog-div color-gray" >
-        <div class="close-btn-div color-black" onclick="closeDialog()"></div>
+        <div class="close-btn-div color-black" onclick="closeDialog()">
+          <i class="material-icons float-right">close</i></div>
         <h2 class="center">ESTETICA</h2>
-        
-        <table>
+
+        <table class="table float-left">
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
+          <tr>
+            <td>Piega corta</td>
+            <td>13</td>            
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
+          </tr>
           <tr>
             <td>Piega lunga</td>
             <td>15</td>
           </tr>
           <tr>
-            <td>Piega corta</td>
-            <td>13</td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+        </table>
+        <table class="table float-right">
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>            
           </tr>
           <tr>
             <td>Piega corta</td>
-            <td>13</td>
+            <td>13</td>            
           </tr>
           <tr>
-            <td>Piega corta</td>
-            <td>13</td>
+            <td>Piega lunga</td>
+            <td>15</td>            
           </tr>
           <tr>
-            <td>Piega corta</td>
-            <td>13</td>
+            <td>Piega lunga</td>
+            <td>15</td>            
           </tr>
           <tr>
-            <td>Piega corta</td>
-            <td>13</td>
+            <td>Piega lunga</td>
+            <td>15</td>
           </tr>
           <tr>
-            <td>Piega corta</td>
-            <td>13</td>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
+          </tr>
+          <tr>
+            <td>Piega lunga</td>
+            <td>15</td>
           </tr>
         </table>
 
@@ -261,19 +350,19 @@
         <!-- Info -->
         <div class="info card center-div color-content" >
 
-          <p class="left text-1">
+          <p class="left text-2">
             <i class="material-icons" style="font-size:20px;color:white">date_range</i> Martedì - Venerdì: 9-20<br> 
           </p>
-          <p class="left text-1">
+          <p class="left text-2">
             <i class="material-icons" style="font-size:20px;color:white">date_range</i> Sabato e Domenica: 10-21<br> 
           </p>
-          <p class="left text-1">
+          <p class="left text-2">
             <i class="fa fa-mobile-phone" style="font-size:20px;color:white"></i> 340 1842976
           </p>
-          <p class="left text-1">
+          <p class="left text-2">
             <i class="fa fa-phone" style=></i> 095 371840
           </p>
-          <p class="left text-1">
+          <p class="left text-2">
             <i class="material-icons" style="font-size:20px;color:white">place</i> Via Milano 58/D, Catania
           </p>
 
