@@ -5,12 +5,14 @@
   <link rel="stylesheet" type="text/css" href="style.css" media="screen">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>Franco & Gaetano</title>
+  <link rel="icon" type="image/x-icon" href="/img/logo.ico">
  
 
   </head>
   <body>
     <!-- NAV BAR -->
-    <ul class="menu">
+    <ul class="menu display-block">
       <a href="#home">
         <img class="logo-img" src="img/logo.jpg">
       </a>
@@ -18,6 +20,21 @@
       <li class="menu-item"><a href="#servizi">SERVIZI</a></li>
       <li class="menu-item"><a href="#chiSiamo">CHI SIAMO</a></li>
       <li class="menu-item"><a href="#home">HOME</a></li> 
+    </ul> 
+
+    <!-- NAV BAR mobile-->
+    <div class="m-menu-header color-black display-none" >
+      <i class="material-icons open-i" onclick="openMenu()">menu</i> 
+    </div>
+    <ul id="m-menu" class="m-menu display-menu">
+      <p class="menu-title center">MENU</p>
+      <i class="material-icons close-i color-black" onclick="closeMenu()">close</i>  
+
+      <li class="m-menu-item"><a href="#home" onclick="closeMenu()">HOME</a></li> 
+      <li class="m-menu-item"><a href="#chiSiamo" onclick="closeMenu()">CHI SIAMO</a></li>           
+      <li class="m-menu-item"><a href="#servizi" onclick="closeMenu()">SERVIZI</a></li>
+      <li class="m-menu-item"><a href="#contatti" onclick="closeMenu()">CONTATTI</a></li>     
+      
     </ul> 
 
     <!-- HOME -->
@@ -98,9 +115,9 @@
 
       <!-- Dialogs -->
       <div id="dialog_1" class="dialog-div color-gray" >
-        <div class="close-btn-div color-black" onclick="closeDialog()">
-          <i class="material-icons float-right">close</i></div>
-        <h2 class="center">SALONE</h2>
+        <p class="sub-title-2 center">SALONE</p>
+        <i class="material-icons close-i float-right color-black" onclick="closeDialog()">close</i>          
+        
 
         <table class="table float-left">
           <tr>
@@ -406,6 +423,16 @@
           dialogs[i].style.display ="none";
         }        
       }
+
+      function openMenu(){
+        let menu = document.getElementById("m-menu");        
+        menu.style.display ="block";               
+      }
+      function closeMenu(){
+        let menu = document.getElementById("m-menu");        
+        menu.style.display ="none";               
+      }
+      
     </script>
     
     <!-- BUTTONS 
